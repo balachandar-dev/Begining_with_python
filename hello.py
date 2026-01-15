@@ -20,3 +20,17 @@ long_dash = "-" * len(full_name)
 
 is_true = True
 or_false = False
+
+age = 18
+
+can_vote = age >= 18
+
+has_licence = True 
+
+is_drunk = True
+
+can_drive = age >= 16 and has_licence and not is_drunk
+# or
+
+is_adult = age >= 16
+is_child = not is_adult
