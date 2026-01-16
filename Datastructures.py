@@ -41,3 +41,15 @@ black_color = (0, 0, 0)
 pi_value = 3.14
 
 red_color[0]
+
+# Sets - probably array
+# no duplicates
+
+numbers = {0, 1, 2, 3}
+fruits = set(["apple", "banana"])
+
+scores = [85, 90, 95, 85]
+unique_sets = set(scores)
+
+unique_sets.discard(85) # doesnt care 
+unique_sets.remove(85) # error if it doesnt works 
