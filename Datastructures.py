@@ -19,3 +19,25 @@ colors.remove("green")
 colors.insert(2, "green")
 
 colors.sort()
+
+#Dictionary key-value
+
+person = {
+    "name": "Alice",
+    "age": 25,
+    "city": "Chennai"
+}
+
+person["name"]
+
+person["name"] = "Dave"
+
+del person["name"]
+
+#tuples - immutable list
+
+red_color = (255, 0, 0)
+black_color = (0, 0, 0)
+pi_value = 3.14
+
+red_color[0]
