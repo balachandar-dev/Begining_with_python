@@ -3,6 +3,7 @@
 # math.sqrt(4)
 
 from math import sqrt, pi
+# or use from math import * to import everything
 
 sqrt(16)
 
