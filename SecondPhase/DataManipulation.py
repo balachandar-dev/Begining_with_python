@@ -2,10 +2,12 @@ import requests
 from datetime import datetime, timedelta
 import pandas as pd
 import matplotlib.pyplot as plt
-
+from Functions import addition
 
 today = datetime.now()
 week_ago = today - timedelta(days=7)
+
+addition(5, 10)
 
 start_date = week_ago.strftime("%Y-%m-%d")
 end_date = today.strftime("%Y-%m-%d")

@@ -26,18 +26,18 @@ def calculate_value(price, tax, discount):
 
 calculate_value(90, 0.25, 10)
 
-def add(a, b): 
+def addition(a, b): 
     return a + b
 
-added_value = add(10, 5)
+added_value = addition(10, 5)
 
 print(f"added value is {added_value}")
 
-multiply_two_values = add(10, 5) * add(3, 4)
+multiply_two_values = addition(10, 5) * addition(3, 4)
 
 print(f"multiple value is {multiply_two_values}")
 
-if add(10, 23) > 20:
+if addition(10, 23) > 20:
     print("failed")
 else:
     print("success")
