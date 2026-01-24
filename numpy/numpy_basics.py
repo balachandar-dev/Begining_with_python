@@ -1,3 +1,4 @@
+from matplotlib.pylab import int32
 import numpy as np
 
 numpy_array = np.array([[0, 1, 2, 3, 4, 5, 6, 7]])
@@ -31,8 +32,17 @@ array_random = np.random.rand(4,2,3)
 array_random_int = np.random.randint(4, 8, size = (3,3))
 # range is 4 to 8, matrix 3 * 3
 # u can use negative too
-
+ 
 array_id = np.identity(5)
+#square matrix
 
 repear_array = np.repeat(numpy_array, 3, axis = 0)
 # to repeat, it should be enclosed in [[values]] 
+
+a = np.ones((5,5), dtype = int32)
+
+b = np.zeros((3,3), dtype = int32)
+
+a [1:-1, 1:-1] = b
+
+a[2,2] = 9
