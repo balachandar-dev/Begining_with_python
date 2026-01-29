@@ -104,3 +104,19 @@ print(d[even_number].size)
 
 e = np.array([[3, 5, 7, -2]])
 print(np.all(e > 0))
+
+f = np.array([2, 3, 4, 5])
+print(f ** 2)
+
+g = np.array([8, 3, 10, 1, 6])
+print(np.min(g))
+
+h = np.array([True, False, True, False])
+print(h.astype('int32'))
+
+i = np.array([[10, 20, 30, 40]])
+mean_value = np.mean(i)
+print(i[i > mean_value])
+
+j = [[1, 2], [3, 4]]
+print(np.ravel(j))
