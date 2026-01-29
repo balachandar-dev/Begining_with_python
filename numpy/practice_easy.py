@@ -1,6 +1,6 @@
 import numpy as np
 
-# Very easy 
+# Very easy - DAy 1
 
 """ 1 Create & Inspect
 Create a NumPy array from 1 to 20 and:
@@ -84,3 +84,23 @@ print(np.argmax(given_array))
 
 to_convert_array = np.array([1.2, 2.5, 3.8])
 print(to_convert_array.astype('int32'))
+
+
+# Day 2
+
+a = np.arange(5,16)
+print(a)
+
+b = np.array([10, 20, 30, 40, 50])
+print(b[0], b[-1])
+
+c = np.array([0, 1, 0, 2, 3, 0])
+c[c == 0] = -1
+print(c)
+
+d = np.array([1, 4, 6, 7, 9, 10])
+even_number = np.where(d % 2 == 0)
+print(d[even_number].size)
+
+e = np.array([[3, 5, 7, -2]])
+print(np.all(e > 0))
