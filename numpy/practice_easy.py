@@ -57,3 +57,30 @@ b = b[b%2 == 0]
 bool_array = np.array([True, False, True, False])
 n = np.sum(bool_array == True) 
 print(n)
+
+"""
+[10, 25, 5, 30, 15]
+Replace all values greater than 20 with 0."""
+
+a = np.array([10, 25, 5, 30, 15])
+a[a > 20] = 0
+print(a)
+
+""""[5, 3, -1, 7]
+Check if any element is negative."""
+
+a = np.array([5, 3, -1, 7])
+a = np.any(a < 0)
+print(a)
+
+identity_array = np.identity(3)
+
+add_the_array = np.array([[1, 2], [3, 4]])
+sum = np.sum(add_the_array)
+print(sum)
+
+given_array = np.array([4, 7, 1, 9, 3])
+print(np.argmax(given_array))
+
+to_convert_array = np.array([1.2, 2.5, 3.8])
+print(to_convert_array.astype('int32'))
