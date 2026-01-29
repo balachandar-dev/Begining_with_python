@@ -118,5 +118,5 @@ i = np.array([[10, 20, 30, 40]])
 mean_value = np.mean(i)
 print(i[i > mean_value])
 
-j = [[1, 2], [3, 4]]
+j = np.array([[1, 2], [3, 4]])
 print(np.ravel(j))
