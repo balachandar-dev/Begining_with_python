@@ -121,7 +121,7 @@ print(i[i > mean_value])
 j = np.array([[1, 2], [3, 4]])
 print(np.ravel(j))
 
-# 2Darray 
+# 2Darray Day 3
 
 array_2d = np.arange(1, 7).reshape(2, 3)
 print(array_2d)
@@ -180,3 +180,65 @@ m = np.array([[2, 4], [6, 8]])
 sum_of_each_row = np.sum(m, axis = 1)
 
 print(m / sum_of_each_row)
+
+# Day 4
+
+a = np.arange(1,13)
+a = a.reshape(3,4)
+print(a)
+
+print(a.shape[0]) # no of rows
+print(a.shape[1]) # no of columns
+print(a.size)
+print(a.ndim)
+
+b = np.array([3, -1, 5, -7, 2])
+b[b<0] = 0
+print(b)
+
+c = np.array([2, 5, 8, 11, 14])
+c = np.sum(c % 2 == 0)
+
+d = np.array([10, 25, 5, 40, 30])
+print(np.argmax(d))
+
+e = np.array([[1, 2, 3], [4, 5, 6]])
+print(np.sum(e, axis = 1))
+
+f = np.array([[1, 2, 0], [4, 5, 6]])
+print(np.any(f == 0))
+
+g = np.array([10, 20, 30, 40])
+mean_value = np.mean(g)
+total = np.sum(g > mean_value)
+
+h = np.array([[1, 6, 3], [8, 2, 4]])
+h[h> 5] = -1
+print(h)
+
+i = np.array([[12, 3],
+                    [5,  20],
+                    [15, 7]])
+j = np.transpose(i)
+count = np.sum(j[0] > 10)
+print(count)
+
+# k = np.array([[1, 2, 3],[4, 5, 6],[7, 8, 9]])
+# k[0,1,2][0,1,2] = 0
+# print(k)
+
+l = np.array([5, 12, 7, 21, 3])
+l[(l>10) & (l%2 == 0)] = -1
+print(l)
+
+
+# day 4 
+# unique 
+
+a = np.array([1, 2, 2, 3, 3, 3, 4])
+
+print(np.unique(a))
+
+b = np.array([5, 15, 25, 35])
+print(np.clip(b,10, 30))
+
