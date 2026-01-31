@@ -120,3 +120,63 @@ print(i[i > mean_value])
 
 j = np.array([[1, 2], [3, 4]])
 print(np.ravel(j))
+
+# 2Darray 
+
+array_2d = np.arange(1, 7).reshape(2, 3)
+print(array_2d)
+
+no_of_rows = array_2d.shape[0]
+print(no_of_rows)
+
+no_of_columns = array_2d.shape[1]
+print(no_of_columns)
+
+b = np.array([[10, 20, 30], [40, 50, 60]])
+print(b[0][1])
+print(b[1][2])
+
+c = np.array([[1, 2, 3], [4, 5, 6]])
+total_row = np.sum(c, axis = 1)
+print(total_row)
+
+total_column = np.sum(c, axis = 0)
+print(total_column)
+
+d = np.array([[1, 2, 3], [4, 5, 6]])
+d[d > 4] = 0
+print(d)
+
+e = np.array([[3, 7, 1], [8, 2, 5]])
+print(np.max(e, axis = 1))
+
+f = np.array([[1, 2, 3], [4, 5, 6]])
+print(np.transpose(f))
+
+g = np.array([[9, 8], [7, 6]])
+print(np.ravel(g))
+
+h = np.array([[1, 2, 0], [4, 5, 6]])
+print(np.any(h == 0))
+
+i = np.array([[1, 2, 3],
+     [4, 5, 6]])
+
+j = np.array([10, 20, 30])
+
+print(i + j)
+
+k  = np.array([[10, 20],
+     [30, 40],
+     [50, 60]])
+
+l = np.array([[1],
+     [2],
+     [3]])
+
+print(k - l)
+
+m = np.array([[2, 4], [6, 8]])
+sum_of_each_row = np.sum(m, axis = 1)
+
+print(m / sum_of_each_row)
